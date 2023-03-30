@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Validar el funcionamiento del Login" skipped="0" tests="2" time="50.71" timestamp="2023-03-29 08:00:16"><testcase name="Realizar Login de forma correcta en la pagina"/><testcase name="Realizar login con correo incorrecto"/></testsuite>

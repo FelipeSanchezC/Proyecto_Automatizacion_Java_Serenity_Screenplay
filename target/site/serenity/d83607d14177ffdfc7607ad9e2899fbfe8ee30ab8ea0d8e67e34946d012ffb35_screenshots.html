@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="29296f5ef1099c0ca1cc821df293ad5fa1c24732fdb83632ce66e7bc424c5339.html">Validar El Funcionamiento Del Login</a></span>
+                > <span class="truncate-60"><a
+                    href="d83607d14177ffdfc7607ad9e2899fbfe8ee30ab8ea0d8e67e34946d012ffb35.html">Realizar login con correo incorrecto </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 29-03-2023 20:00</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Validar El Funcionamiento Del Login </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como analista<br />
+Necesito realizar pruebas de Login en la pagina<br />
+Para Validar el correcto funcionamiento
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="2c53234daf61fe4384a34ce8da55b02d47f2e9c76b50ccbc08b760490bceff23.html">Test Case3
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Realizar login con correo incorrecto
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="eb6a9702b8fa2fd2ab2e60055d7d49b9c210215153eab2801671aa4191cc12c1.png" title=" Given Ingreso a la pagina que se empleara para pruebas" width="1920"/>
+                <img src="eb6a9702b8fa2fd2ab2e60055d7d49b9c210215153eab2801671aa4191cc12c1.png" title=" Analista opens the Home page" width="1920"/>
+                <img src="eb6a9702b8fa2fd2ab2e60055d7d49b9c210215153eab2801671aa4191cc12c1.png" title=" Analista register user inicio" width="1920"/>
+                <img src="eb6a9702b8fa2fd2ab2e60055d7d49b9c210215153eab2801671aa4191cc12c1.png" title=" Analista clicks on Boton para iniciar el registro" width="1920"/>
+                <img src="31e0ae197e559c1afd399add5554faf9363de83dd889b7e7131497db7b7cff9f.png" title=" Analista clicks on Boton para iniciar el registro (completed)" width="1920"/>
+                <img src="31e0ae197e559c1afd399add5554faf9363de83dd889b7e7131497db7b7cff9f.png" title=" Analista register user inicio (completed)" width="1920"/>
+                <img src="31e0ae197e559c1afd399add5554faf9363de83dd889b7e7131497db7b7cff9f.png" title=" Given Ingreso a la pagina que se empleara para pruebas (completed)" width="1920"/>
+                <img src="f915f6ee09fc805c3f5b003e48a7f4a99128f6b6c08a2a421abb4331cb9bcdee.png" title=" When Ingreso la informacion solicitada para el Login con correo incorrecto" width="1920"/>
+                <img src="f915f6ee09fc805c3f5b003e48a7f4a99128f6b6c08a2a421abb4331cb9bcdee.png" title=" Analista ingreso info login error" width="1920"/>
+                <img src="f915f6ee09fc805c3f5b003e48a7f4a99128f6b6c08a2a421abb4331cb9bcdee.png" title=" Analista enters 'qwerty9612@gmail.com' into Ingreso del Email" width="1920"/>
+                <img src="f915f6ee09fc805c3f5b003e48a7f4a99128f6b6c08a2a421abb4331cb9bcdee.png" title=" Analista enters 'Prue1' into Ingreso del PassWord" width="1920"/>
+                <img src="5b7b35c35ddf02cbb28eea5e7254a8e4e656b8a870be3d02189500c434a0e8c5.png" title=" Analista enters 'Prue1' into Ingreso del PassWord (completed)" width="1920"/>
+                <img src="5b7b35c35ddf02cbb28eea5e7254a8e4e656b8a870be3d02189500c434a0e8c5.png" title=" Analista clicks on Boton de ingreso" width="1920"/>
+                <img src="694e710a7d894d013dacc311d9ca7095c6664670beca791ad56e8a845600c7cb.png" title=" Analista clicks on Boton de ingreso (completed)" width="1920"/>
+                <img src="694e710a7d894d013dacc311d9ca7095c6664670beca791ad56e8a845600c7cb.png" title=" Analista ingreso info login error (completed)" width="1920"/>
+                <img src="694e710a7d894d013dacc311d9ca7095c6664670beca791ad56e8a845600c7cb.png" title=" When Ingreso la informacion solicitada para el Login con correo incorrecto (completed)" width="1920"/>
+                <img src="694e710a7d894d013dacc311d9ca7095c6664670beca791ad56e8a845600c7cb.png" title=" Then Valido que se genere el mensaje de control" width="1920"/>
+                <img src="694e710a7d894d013dacc311d9ca7095c6664670beca791ad56e8a845600c7cb.png" title=" Then validar mensaje email incorrecto should be (true): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.12</span>
+</div>
+</body>
+</html>
