@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+"Validar el funcionamiento del Login","Realizar el Logaut de forma correcta en la pagina","PENDING","2023-03-29T20:38:17.048-05:00[America/Bogota]","0.0","17.1"
 "Validar funcionameinto del Register User","Realizar registro de usuario con un correo que se encuentre registrado","SUCCESS","2023-03-29T20:01:44.317-05:00[America/Bogota]","0.0","10.75"

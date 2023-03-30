@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "C:\\Users\\juan.sanchezc\\IdeaProjects\\ProyectoPaginaRopa\\src\\test\\resources\\features\\LoginUser.feature"
                     },
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = ""
+        tags = "@TestCase4"
 )
 
 public class RegisterUserRunner {
