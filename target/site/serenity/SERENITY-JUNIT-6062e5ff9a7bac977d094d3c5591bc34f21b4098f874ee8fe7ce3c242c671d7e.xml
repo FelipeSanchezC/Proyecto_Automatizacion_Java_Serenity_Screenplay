@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Validar el carge de forma correcta de las Paginas de la Web" skipped="1" tests="1" time="0.37" timestamp="2023-03-31 10:09:51"><testcase name="Validar el funcionamiento de la pagina Contact Us Form"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Validar el carge de forma correcta de las Paginas de la Web" skipped="0" tests="1" time="0.42" timestamp="2023-03-31 03:00:22"><testcase name="Validar el funcionamiento de la pagina Contact Us Form"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.google.common.base.Preconditions.checkNotNull(Preconditions.java:889)&#13;
+com.sophossolutions.stepdefinitions.ValidatePage.ValidatePageContactUs.ingresoALaPaginaQueSeEmplearaParaPruebasOpcionDeContactUs(ValidatePageContactUs.java:31)&#13;
+✽.ingreso a la pagina que se empleara para pruebas opcion de Contact us(file:///C:/Users/juan.sanchezc/IdeaProjects/ProyectoPaginaRopa/src/test/resources/features/ValidationPages.feature:8)&#13;
+</system-err></testcase></testsuite>

@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validar el carge de forma correcta de las Paginas de la Web" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-31T15:09:50" hostname="SSBOG5CG1097SR0" time="0.73">
+<testsuite name="Validar el carge de forma correcta de las Paginas de la Web" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-31T20:43:49" hostname="SSBOG5CG1097SR0" time="16.48">
   <properties/>
-  <testcase name="Validar el funcionamiento de la pagina Contact Us Form" classname="Validar el carge de forma correcta de las Paginas de la Web" time="0.73">
-    <failure message="io.cucumber.junit.UndefinedStepException: The step 'ingreso a la pagina que se empleara para pruebas opcion de Contact us' and 2 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;ingreso a la pagina que se empleara para pruebas opcion de Contact us&quot;)&#10;public void ingresoALaPaginaQueSeEmplearaParaPruebasOpcionDeContactUs() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;realizo la validacion de las funcionalidades de la pagina&quot;)&#10;public void realizoLaValidacionDeLasFuncionalidadesDeLaPagina() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;Verifico que no se presenten errores en el flujo&quot;)&#10;public void verificoQueNoSePresentenErroresEnElFlujo() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'ingreso a la pagina que se empleara para pruebas opcion de Contact us' and 2 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;ingreso a la pagina que se empleara para pruebas opcion de Contact us&quot;)
-public void ingresoALaPaginaQueSeEmplearaParaPruebasOpcionDeContactUs() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;realizo la validacion de las funcionalidades de la pagina&quot;)
-public void realizoLaValidacionDeLasFuncionalidadesDeLaPagina() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;Verifico que no se presenten errores en el flujo&quot;)
-public void verificoQueNoSePresentenErroresEnElFlujo() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</failure>
-  </testcase>
+  <testcase name="Validar el funcionamiento de la pagina Contact Us Form" classname="Validar el carge de forma correcta de las Paginas de la Web" time="16.48"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 6797
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 31, 2023 3:43:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 111, so returning the closest version found: 109
+]]></system-err>
 </testsuite>

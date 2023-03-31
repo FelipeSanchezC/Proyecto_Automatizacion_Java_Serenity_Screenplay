@@ -9,4 +9,5 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class HomePage extends PageObject {
 
     public final static Target BTN_SING_UP = Target.the("Boton para iniciar el registro").locatedBy("//a[@href='/login']");
+    public final static Target BTN_CONTACT_US = Target.the("Boton para ingresar a la seccion de contactenos").locatedBy("//a[@href='/contact_us']");
 }
